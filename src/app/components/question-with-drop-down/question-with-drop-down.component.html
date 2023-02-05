@@ -1,0 +1,36 @@
+<div class="container">
+  <form [formGroup]="dropDownForm">
+    <label>Please rate your Work-Life balance in company:</label>
+    <span class="dropDown">
+      <select
+        class="dropDown"
+        formControlName="dropdownControl"
+        [(ngModel)]="currentSelection"
+      >
+        <option *ngFor="let option of dropdownOptions" [ngValue]="option">
+          {{ option }}
+        </option>
+      </select>
+    </span>
+    <span class="buttons">
+      <button type="button" (click)="onNextClick()">next</button>
+    </span>
+  </form>
+</div>
+<!-- <h2 mat-dialog-title>{{ description }}</h2>
+
+<mat-dialog-content [formGroup]="form">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Course Description"
+      formControlName="description"
+    />
+  </mat-form-field>
+  ....
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Close</button>
+  <button class="mat-raised-button mat-primary" (click)="save()">Save</button>
+</mat-dialog-actions> -->

@@ -1,0 +1,22 @@
+ngb-rating {
+  color: #ffc107;
+  font-size: 80px;
+  padding-top: 19px;
+}
+
+.container {
+  width: 200px;
+  height: 180px;
+  padding: 20px;
+  border: 10px solid yellowgreen;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  margin-top: 15px;
+}

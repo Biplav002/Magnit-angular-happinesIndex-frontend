@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="rating">
+    <label
+      >Rate how motivated and rspectful your workplace make you feel about the
+      work you doing:</label
+    >
+    <ngb-rating
+      [max]="5"
+      [(rate)]="starRating"
+      [readonly]="false"
+      (rateChange)="getStarRating($event)"
+    ></ngb-rating>
+  </div>
+
+  <span class="buttons">
+    <button type="button" (click)="onSubmit()">Submit</button>
+  </span>
+</div>
